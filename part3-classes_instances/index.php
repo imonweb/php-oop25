@@ -16,13 +16,14 @@ class Product {
 
   // method - function 
   function calculate_total() {
-
+    echo $this->total;
   }
 }
 
 $book = new Product(); // instantiation
 // echo "book $" . $book->price;
-$book->price = 10;
+// $book->price = 10;
+$book->calculate_total();
 
 echo "<br>";
 
